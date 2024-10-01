@@ -42,7 +42,6 @@ import org.junit.runners.JUnit4
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-
 @RunWith(JUnit4::class)
 class FoodiumServiceTest {
     @Rule
