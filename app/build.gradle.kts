@@ -144,6 +144,16 @@ dependencies {
     // Android Testing
     androidTestImplementation(Testing.extJUnit)
     androidTestImplementation(Testing.espresso)
+
+    androidTestImplementation ("androidx.test.uiautomator:uiautomator:2.2.0")
+
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.4.0")
+    androidTestImplementation ("androidx.test.espresso:espresso-contrib:3.4.0")
+    androidTestImplementation ("androidx.test.ext:junit:1.1.3")
+
+    androidTestImplementation("com.kaspersky.android-components:kaspresso:1.5.2")
+    androidTestUtil("androidx.test:orchestrator:1.4.2")
 }
 
 ktlint {
