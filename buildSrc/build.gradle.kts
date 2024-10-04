@@ -15,7 +15,21 @@
  */
 
 repositories {
+    mavenCentral()
+    google()
+    gradlePluginPortal()
     jcenter()
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 plugins {
