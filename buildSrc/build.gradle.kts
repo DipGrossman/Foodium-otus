@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2019 Google LLC
  *
@@ -16,8 +17,18 @@
 
 repositories {
     jcenter()
+    google()
+    mavenCentral()
+
 }
 
 plugins {
     `kotlin-dsl`
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
