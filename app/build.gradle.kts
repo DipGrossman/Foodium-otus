@@ -28,6 +28,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("org.jlleitschuh.gradle.ktlint")
+    id ("io.qameta.allure") version ("2.9.6")
 }
 
 android {
@@ -144,6 +145,10 @@ dependencies {
     // Android Testing
     androidTestImplementation(Testing.extJUnit)
     androidTestImplementation(Testing.espresso)
+
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.5.0")
+    testImplementation("io.qameta.allure:allure-junit5:2.17.3")
+
 }
 
 ktlint {
